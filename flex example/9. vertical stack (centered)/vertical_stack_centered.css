@@ -1,0 +1,25 @@
+/* Source: https://tobiasahlin.com/blog/common-flexbox-patterns/#vertical-stack-centered */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+    background-color:grey;
+    height: 50vh;
+}
+
+.row{
+    background-color: lightblue;
+    min-height: 6vh;
+    width: 40vw;
+    margin-bottom: 2vh;
+}
