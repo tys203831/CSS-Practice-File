@@ -1,0 +1,41 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.graph{
+    background-color: lightblue;
+    height:14%;
+}
+
+.bar-1{
+    width: 20%;
+}
+
+.bar-2{
+    width: 60%;
+}
+
+.bar-3{
+    width: 80%;
+}
+
+.bar-4{
+    width: 90%;
+}
+
+.bar-5{
+    width: 30%;
+}
