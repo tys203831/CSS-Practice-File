@@ -1,0 +1,28 @@
+/* Source: https://tobiasahlin.com/blog/common-flexbox-patterns/#stretch-middle-fixed-spacing */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    display:flex;
+}
+
+.box{
+    background-color:yellow;
+    height:100px;
+    width:100px;
+}
+
+.item-2{
+    flex-grow:1;
+    border:0.5em solid green;
+}
+
+/* + symbol means "the next one sibling item relative to one item " */
+/* Refer the CSS Axes for more info */
+.box + .box{
+    margin: 0 0 0 2px;
+}

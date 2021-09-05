@@ -1,0 +1,22 @@
+/* Source: https://tobiasahlin.com/blog/common-flexbox-patterns/#stretch-all-fixed-spacing */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    display:flex;
+}
+
+.box{
+    flex-grow:1;
+    background-color:yellow;
+    height:100px;
+}
+
+.box + .box {
+    margin-left:2px;
+}
+

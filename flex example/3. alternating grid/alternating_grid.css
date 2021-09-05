@@ -1,0 +1,33 @@
+/* Source: https://tobiasahlin.com/blog/common-flexbox-patterns/#alternating-grid */
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap; /*Set flex-wrap: wrap on the container 
+                    (or all items would be rendered on a single row)*/
+    justify-content: space-between; /* Set justify-content: space-between on the container, 
+                                    to only create space between the elements (and not between 
+                                    the edge of the parent element and items) */
+}
+
+.box{
+    flex-grow:1;
+    height: 20em;
+    width: 48%; /* Set every item’s width to 49% 
+                (or something similar that is equal to or less than 50%) */
+    background-color: yellow;
+    border: 0.5em solid green;
+}
+
+/* Set every third item’s width to 100% so that it fills that entire row. We can target every third item in the list with the nth-child() selector. */
+.box:nth-child(3n){
+    width:100%
+}
+
+.box + .box{
+    margin-left:2px;
+}
