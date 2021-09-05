@@ -15,10 +15,11 @@ body{
     justify-content:space-between;
 }
 
+/*ratio 16:9 -> e.g. if width:16px, then height: 8px */
 .box{
     border: 0.25em solid green;
     background-color: yellow;
     flex: 0 1 32%;
-    padding-bottom: 32%;
+    padding-bottom: 18%; /* = 32/2 */
     margin-bottom: 2%;  /* = (100 -(32*3))/2 */
 }
