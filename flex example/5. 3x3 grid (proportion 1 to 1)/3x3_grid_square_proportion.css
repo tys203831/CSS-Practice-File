@@ -1,0 +1,24 @@
+/* Source: https://tobiasahlin.com/blog/common-flexbox-patterns/#3x3-grid-constrained-proportions-11 */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.box{
+    border: 0.25em solid green;
+    background-color: yellow;
+    flex: 0 1 32%;
+    padding-bottom: 32%;
+    margin-bottom: 2%; 
+}

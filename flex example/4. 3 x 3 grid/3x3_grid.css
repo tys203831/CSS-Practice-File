@@ -1,0 +1,30 @@
+/* Source: https://tobiasahlin.com/blog/common-flexbox-patterns/#3x3-grid */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box{
+    flex: 0 1 32%; /*flex: {flex-grow, flex-shrink, flex-basis}*/
+    /*flex-basis of 200px means at minimum 200px wide; 
+    flex-grow defines whether an element to grow to take up available space, e.g. flex-grow:0 means cannot take up available space;
+    flex-shrink is the opposite of flex-grow, i.e. flex-shrink of 1 means flex-grow of 0*/    
+    height: 20em;
+    border: 0.25em solid green; /* border: {border-width, border-style, border-color}*/
+    background-color: yellow;
+}
+
+.box + .box {
+    margin-left: 0.25;
+}
